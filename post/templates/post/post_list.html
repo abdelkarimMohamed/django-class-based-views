@@ -1,1 +1,9 @@
 <h1>Posts list</h1>
+<h3>{{ myname }}</h3>
+{% for post in post_list %}
+    <h2>{{ post.title }}</h2>
+    <h2>{{ post.content }}</h2>
+    <h2>{{ post.created_at }}</h2>
+    <h2><img src="{{ post.image.url }}" height="70px;" width="70px;" alt="" srcset=""></h2>
+    <hr>
+{% endfor %}
